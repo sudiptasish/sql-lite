@@ -12,7 +12,7 @@ SQL Lite offers a simple GUI to view the table data or performing trivial DML op
 1. Checkout the **lib** and **deploy** directory. **lib** directory contains libraries (client jars) for different RDBMS systems.
 1. Run using the command:
 ```
-java $DEBUG_OPTS -jar deploy/sql-lite-1.0-SNAPSHOT.jar
+java -jar deploy/sql-lite-1.0-SNAPSHOT.jar
 ```
 
 It opens a UI.
