@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqllite>
+    <db-config>
+        <name>Test_Local</name>
+        <dbType>ORACLE</dbType>
+        <host>localhost</host>
+        <port>1521</port>
+        <sid>orcl12c</sid>
+        <service></service>
+        <user>system</user>
+        <password>manager</password>
+    </db-config>
+</sqllite>
