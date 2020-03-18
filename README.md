@@ -4,7 +4,7 @@ SQL LiTE, as the name suggest, is a light-weight tool that acts as a SQL client.
 
 There was a time (during monolothic days) when most of the business logic used to lie with database in the form of procedure/trigger/functions, etc. Therefore developers had to have a sophisticated and powerful IDE to work with PL/SQL procedure, functions, etc. Of late, people started building more scalable system, thus moving the business logic from DB layer to application layer (separating the compute from storage), thus no longer having the need of such heavy weight IDEs. 
 
-SQL Lite offers a simple GUI to view the table data or performing trivial DML operation. Although compilation of procedure/packages/views/triggers, etc are supported, but not encouraged.
+SQL Lite offers a simple GUI to view the table data or performing trivial DML operation. You can also view the basic and advanced sql plan (for Oracle). Although compilation of procedure/packages/views/triggers, etc are supported, but not encouraged.
 
 ## How to run
 
