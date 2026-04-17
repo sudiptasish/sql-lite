@@ -10,4 +10,14 @@
         <user>system</user>
         <password>manager</password>
     </db-config>
+    <db-config>
+        <name>PSU</name>
+        <dbType>DB2</dbType>
+        <host>148.171.100.20</host>
+        <port>7330</port>
+        <sid>ADC1DB2T</sid>
+        <service></service>
+        <user>XY2215A</user>
+        <password>3t#ss0mG</password>
+    </db-config>
 </sqllite>

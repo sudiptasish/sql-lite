@@ -7,7 +7,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 public class TimestampCellRenderer extends DefaultTableCellRenderer {
 
-    private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSSSSS");
+    private final DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSSSSSSS");
 
     public TimestampCellRenderer() {
         super();

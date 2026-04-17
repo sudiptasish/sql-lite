@@ -10,18 +10,19 @@ package com.sc.hm.sqll.config;
  * @author Sudiptasish Chanda
  */
 public enum DatabaseType {
-    
-    ORACLE ("Oracle"),
-    DB2 ("DB2"),
-    SYSBASE ("Sybase"),
-    DERBY ("Derby");
-    
+
+    ORACLE("Oracle"),
+    DB2("DB2"),
+    POSTGRES("PostgreSQL"),
+    SYSBASE("Sybase"),
+    DERBY("Derby");
+
     private final String desc;
-    
+
     DatabaseType(String desc) {
         this.desc = desc;
     }
-    
+
     public String getDesc() {
         return this.desc;
     }

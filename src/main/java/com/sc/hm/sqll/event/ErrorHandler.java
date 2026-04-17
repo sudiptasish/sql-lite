@@ -11,31 +11,32 @@ import javax.swing.border.EmptyBorder;
 
 public class ErrorHandler {
 
-	private JLabel label;
-	
-	public ErrorHandler() {
-		label = new JLabel("");
-		label.setBorder(new EmptyBorder(5, 5, 5, 5));
-	}
-	
-	/**
-	 * Show the error details on the error panel.
-	 * @param th
-	 */
-	public void showError(Throwable th) {
-		ByteArrayOutputStream bOut = new ByteArrayOutputStream();
-		PrintStream ps = new PrintStream(bOut);
-		th.printStackTrace(ps);
-		ps.close();
-		
-		String s = "<html>" + new String(bOut.toByteArray()).
-				replaceAll("\n", "<br>").
-				replaceAll("\t", "&nbsp;&nbsp;&nbsp;&nbsp;") + "</html>";
-		label.setText(s);
-		
-		JScrollPane errorPane = new JScrollPane(label);
-		errorPane.setSize(new Dimension(500, 300));
-		errorPane.setPreferredSize(new Dimension(500, 300));
-		JOptionPane.showMessageDialog(null, errorPane, "Error Message", JOptionPane.PLAIN_MESSAGE);
-	}
+    private JLabel label;
+
+    public ErrorHandler() {
+        label = new JLabel("");
+        label.setBorder(new EmptyBorder(5, 5, 5, 5));
+    }
+
+    /**
+     * Show the error details on the error panel.
+     *
+     * @param th
+     */
+    public void showError(Throwable th) {
+        ByteArrayOutputStream bOut = new ByteArrayOutputStream();
+        PrintStream ps = new PrintStream(bOut);
+        th.printStackTrace(ps);
+        ps.close();
+
+        String s = "<html>" + new String(bOut.toByteArray()).
+                replaceAll("\n", "<br>").
+                replaceAll("\t", "&nbsp;&nbsp;&nbsp;&nbsp;") + "</html>";
+        label.setText(s);
+
+        JScrollPane errorPane = new JScrollPane(label);
+        errorPane.setSize(new Dimension(500, 300));
+        errorPane.setPreferredSize(new Dimension(500, 300));
+        JOptionPane.showMessageDialog(null, errorPane, "Error Message", JOptionPane.PLAIN_MESSAGE);
+    }
 }

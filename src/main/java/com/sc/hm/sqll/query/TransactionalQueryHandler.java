@@ -21,14 +21,12 @@ public class TransactionalQueryHandler extends QueryHandler {
         Connection conn = cache.getConnection();
         if (QueryHandler.COMMIT_QUERY == query.getType()) {
             conn.commit();
-        }
-        else if (QueryHandler.ROLLBACK_QUERY == query.getType()) {
+        } else if (QueryHandler.ROLLBACK_QUERY == query.getType()) {
             conn.rollback();
-        }
-        else {
+        } else {
             throw new SQLException(new IllegalArgumentException("Invalid txn query type: " + query.getType()));
         }
         return null;
     }
-    
+
 }

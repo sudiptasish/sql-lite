@@ -1,35 +1,36 @@
 package com.sc.hm.sqll.query;
 
 public class QueryStatistics {
-	
-	private long executionTime = 0L;
-	private long fetchTime = 0L;
-	private long renderTime = 0L;
 
-	public QueryStatistics() {}
+    private long executionTime = 0L;
+    private long fetchTime = 0L;
+    private long renderTime = 0L;
 
-	public long getExecutionTime() {
-		return executionTime;
-	}
+    public QueryStatistics() {
+    }
 
-	public void setExecutionTime(long executionTime) {
-		this.executionTime = executionTime;
-	}
+    public long getExecutionTime() {
+        return executionTime;
+    }
 
-	public long getFetchTime() {
-		return fetchTime;
-	}
+    public void setExecutionTime(long executionTime) {
+        this.executionTime = executionTime;
+    }
 
-	public void setFetchTime(long fetchTime) {
-		this.fetchTime = fetchTime;
-	}
+    public long getFetchTime() {
+        return fetchTime;
+    }
 
-	public long getRenderTime() {
-		return renderTime;
-	}
+    public void setFetchTime(long fetchTime) {
+        this.fetchTime = fetchTime;
+    }
 
-	public void setRenderTime(long renderTime) {
-		this.renderTime = renderTime;
-	}
+    public long getRenderTime() {
+        return renderTime;
+    }
+
+    public void setRenderTime(long renderTime) {
+        this.renderTime = renderTime;
+    }
 
 }

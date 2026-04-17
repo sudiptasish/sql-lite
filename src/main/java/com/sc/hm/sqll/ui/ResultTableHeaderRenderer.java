@@ -10,9 +10,9 @@ import javax.swing.border.MatteBorder;
 import javax.swing.table.TableCellRenderer;
 
 public class ResultTableHeaderRenderer extends JLabel implements TableCellRenderer {
-	
-	public ResultTableHeaderRenderer() {
-		setBackground(Color.GRAY);
+
+    public ResultTableHeaderRenderer() {
+        setBackground(Color.GRAY);
         setForeground(Color.BLUE);
         setBorder(new CompoundBorder(
                 new MatteBorder(1, 1, 0, 0, Color.WHITE),
@@ -20,16 +20,16 @@ public class ResultTableHeaderRenderer extends JLabel implements TableCellRender
         ));
     }
 
-	@Override
-	public Component getTableCellRendererComponent(JTable table
-			, Object value
-			, boolean isSelected
-			, boolean hasFocus
-			, int row
-			, int column) {
-		
-		setText(value != null ? value.toString() : "");
+    @Override
+    public Component getTableCellRendererComponent(JTable table,
+             Object value,
+             boolean isSelected,
+             boolean hasFocus,
+             int row,
+             int column) {
+
+        setText(value != null ? value.toString() : "");
         return this;
-	}
+    }
 
 }

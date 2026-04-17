@@ -5,9 +5,9 @@ import java.awt.event.ActionListener;
 
 public class PlanOptionListener implements ActionListener {
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		SharedObject.get().put(SharedObject.PLAN_TYPE_KEY, e.getActionCommand());
-	}
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        SharedObject.get().put(SharedObject.PLAN_TYPE_KEY, e.getActionCommand());
+    }
 
 }
